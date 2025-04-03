@@ -5,7 +5,7 @@ pipeline {
          stage('Checkout') {
             steps {
                 git branch: 'main',
-                url: 'https://github.com/pixelslabs/pyApp.git'
+                url: 'https://github.com/pixelslabs/webscrp.git'
             }
         }
         stage('Build Docker Image') {
