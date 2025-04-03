@@ -2,9 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
+         stage('Checkout') {
             steps {
-                git 'https://github.com/pixelslabs/webscrp.git'
+                git branch: 'main',
+                url: 'https://github.com/pixelslabs/pyApp.git'
             }
         }
         stage('Build Docker Image') {
